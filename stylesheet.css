@@ -52,14 +52,14 @@ li {
 	display: none;
 }
 .content {
-	background: #f5f4f4 url(images/bg_contents.png) repeat-y left top; 
+	background: #f5f4f4 url(images/bg_contents.png) repeat-y left top;
 	min-height: 100%;
 	margin: 0 0 0 350px;
 	position: relative;
 	min-width: 560px;
 }
 .shadow {
-	background: url(img/bg_shadow.png) repeat-y;
+	background: url(images/bg_shadow.png) repeat-y;
 	height: 100%;
 	left:-7px;
 	position: absolute;
