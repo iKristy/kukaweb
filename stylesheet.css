@@ -4,20 +4,20 @@
   	src: url("Monaco.ttf");
 	}
 
-html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { 
-	margin: 0; 
-	padding: 0; 
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
+	margin: 0;
+	padding: 0;
 }
 
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-} 
+}
 
-body { 
+body {
 	background: #050002 url(../images/bg.png) center top repeat-x;
 	color: #2f1d27;
-	font-family: Monaco, "Courier New", Courier, monospace, "monospaced"; 
+	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size:11px;
 	line-height:1.5em;
 }
@@ -27,7 +27,7 @@ body, html {
 }
 
 a {
-	color: #2a6e33; 
+	color: #2a6e33;
 	text-decoration: none;
 	padding: 2px;
 
@@ -42,7 +42,7 @@ a:hover {
 }
 
 h2 {
-	font-size: 1em; 
+	font-size: 1em;
 	font-weight: normal;
 }
 li {
@@ -52,7 +52,7 @@ li {
 	display: none;
 }
 .content {
-	background: #f5f4f4 url(img/bg_contents.png) repeat-y left top; 
+	background: #f5f4f4 url(images/bg_contents.png) repeat-y left top; 
 	min-height: 100%;
 	margin: 0 0 0 350px;
 	position: relative;
@@ -72,7 +72,7 @@ li {
 	position:absolute;
 	top:0;
 	bottom:0;
-	height: 100%; 
+	height: 100%;
 }
 .lineNumbers ul {
 	margin: 31px 0 0 0;
@@ -80,10 +80,10 @@ li {
 .lineNumbers li {
 	color: #8e8e8e;
 	padding: 0 12px;
-	text-align:right;  	
+	text-align:right;
 }
 .info {
-	float:left; 
+	float:left;
 	margin:30px 0 0 62px
 }
 .clear {
@@ -101,7 +101,7 @@ li {
 }
 .brace {
 	margin-bottom: 1.5em;
-	
+
 .home {
 	padding-left: 800px;
 }
@@ -110,7 +110,7 @@ li {
 .gray {
 	font-style: italic;
 	color: #ccc;
-	
+
 }
 .red {
 	color: #ff0000;
@@ -120,7 +120,7 @@ li {
 
 /* Pixels */
 
-size: 20px; 
+size: 20px;
 @function cs($s) {
   @return ($size*18);
 }
@@ -151,21 +151,21 @@ size: 20px;
     8em 1em #8e693d,
     9em 1em #8e693d,
     10em 1em #8e693d,
-    11em 1em #cfaf89, 
+    11em 1em #cfaf89,
     12em 1em #6e5537,
     13em 1em black,
     14em 1em black,
     4em 2em black,
     5em 2em #8c6a3d,
-    6em 2em #6e5537, 
-    7em 2em #ae895d, 
+    6em 2em #6e5537,
+    7em 2em #ae895d,
     8em 2em #8b683e,
-    9em 2em #8c693f, 
+    9em 2em #8c693f,
     10em 2em #8e693d,
     11em 2em #8e693d,
     12em 2em #ad8a62,
     13em 2em #8d6b3e,
-    14em 2em #8c6a3d, 
+    14em 2em #8c6a3d,
     15em 2em black,
     3em 3em black,
     4em 3em #af8a60,
