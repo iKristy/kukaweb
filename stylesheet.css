@@ -15,8 +15,8 @@ html {
 }
 
 body {
-	background: #050002 url(../images/bg.png) center top repeat-x;
-	color: #2f1d27;
+	background: #050002 url(../images/bg.png);
+	background-size: cover;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size:11px;
 	line-height:1.5em;
@@ -60,6 +60,7 @@ li {
 }
 .shadow {
 	background: url(images/bg_shadow.png) repeat-y;
+	opacity: 0.4;
 	height: 100%;
 	left:-7px;
 	position: absolute;
@@ -100,7 +101,7 @@ li {
 	color: #000099;
 }
 .brace {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.7em;
 
 .home {
 	padding-left: 800px;
