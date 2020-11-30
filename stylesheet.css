@@ -1,6 +1,7 @@
 @font-face {
   	font-family: Monaco;
-  	src: url("Monaco.ttf");
+  	src: url("assets/Monaco.ttf");
+    
 	}
 
 * { 
@@ -13,7 +14,7 @@ body, html {
 }
 
 body {
-	background: pink url("images/bg.png") no-repeat fixed;
+	background: pink url("assets/bg.png") no-repeat fixed;
   background-size: cover;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size: 12px;
@@ -153,7 +154,7 @@ p {
 /* Pixels */
 
 .avatar {
-  background: url(images/avatar-full.svg) no-repeat;
+  background: url(assets/avatar-full.svg) no-repeat;
   height: 40em;
   width: 100%;
   position: fixed;
@@ -181,7 +182,7 @@ p {
   }
 
   .avatar {
-    background: url(images/avatar-head.svg) center center no-repeat;
+    background: url(assets/avatar-head.svg) center center no-repeat;
     display: block;
     margin: 2em 0 2em 0;
     position: relative;
