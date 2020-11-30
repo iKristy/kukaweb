@@ -152,9 +152,9 @@ p {
 
 .avatar {
   background: url(images/avatar-full.svg) no-repeat;
+  height: 40em;
+  width: 100%;
   position: fixed;
-  height: 60%;
-  width: 60%;
   top: 6em;
   left: 6em;
 }
@@ -162,8 +162,7 @@ p {
 
 /* Mobile layout  */
 
-@media screen and (max-width: 45em) {
-  
+@media screen and (max-width: 32em) {
   body {
     font-size: 14px;
   }
@@ -173,7 +172,7 @@ p {
   }
   
   .content {
-    min-width: 320px;
+    max-width: 100vh;
     margin: 8px 0 0 0;
     padding-right: 16px;
     position: relative;
@@ -182,12 +181,56 @@ p {
   .avatar {
     background: url(images/avatar-head.svg) center center no-repeat;
     display: block;
+    margin: 2em 0 2em 0;
     position: relative;
-    margin: auto;
-    margin-top: 1em;
-    height: 25%;
-    width: 25%;
+    height: 6em;
     top: 0;
     left: 0;
   }
+}
+
+
+@media screen and (max-width: 52em) and (orientation: landscape) {
+  body {
+    font-size: 1.15em;
+  }
+  
+  p {
+    padding-left: 1.2em;
+  }
+  
+  .content {
+    margin: 0 0 0 16em;
+    min-width: 100vh;
+    padding-right: 16px;
+  }
+  
+  .avatar {
+    height: 16em;
+    left: 5em;
+  } 
+}
+
+
+/* Tablet-friendly */
+
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+  body {
+    font-size: 1.15em;
+  }
+  
+  p {
+    padding-left: 1.2em;
+  }
+  
+  .content {
+    margin: 0 0 0 16em;
+    min-width: 100vh;
+    padding-right: 16px;
+  }
+  
+  .avatar {
+    height: 16em;
+    left: 5em;
+  } 
 }
