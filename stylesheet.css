@@ -10,6 +10,7 @@
 }
 
 body, html { 
+  font-size: 12px;
   height: 100%;
 }
 
@@ -18,15 +19,14 @@ body {
   background-size: cover;
   color: black;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
-	font-size: 12px;
-	line-height: 1.5em;
+	line-height: 1.5rem;
 }
 
 a {
-  border-radius: 0.5em;
+  border-radius: 0.4rem;
 	color: darkgreen;
-  padding: 2px;
-  text-decoration: underline gainsboro;
+  padding: 0.16rem;
+  text-decoration: underline lightgray;
 }
 
 a::before, a::after {
@@ -38,6 +38,7 @@ a:hover {
   color: white;
   background: darkgreen;
   text-decoration: none;
+  transition: background .2s ease-in-out, color .2s ease-in-out;
 }
 
 a:hover::before, a:hover::after {
@@ -45,7 +46,7 @@ a:hover::before, a:hover::after {
 }
 
 h2 {
-	font-size: 1em;
+	font-size: inherit;
 	font-weight: normal;
 }
 
@@ -59,11 +60,11 @@ li {
 
 .content {
   background-color: white;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,0.32);
-	margin: 0 0 0 320px;
+  box-shadow: 0 0 0.6rem 0 rgba(0,0,0,0.32);
+	margin: 0 0 0 26rem;
   min-height: 100%;
   overflow-y: scroll;
-  padding: 0 24px 16px 0;
+  padding: 0 2rem 1.3rem 0;
 	position: relative;
 }
 
@@ -77,23 +78,23 @@ li {
 }
 
 .lineNumbers ul {
-	margin: 32px 0 0 0;
+	margin: 2.6rem 0 0 0;
 }
 
 .lineNumbers li {
 	color: gray;
   cursor: default;
-	padding: 0 12px;
+	padding: 0 1rem;
 	text-align: right;
 }
 
 .info {
 	float: left;
-	margin: 32px 0 0 64px;
+	margin: 2.6rem 0 0 5.4rem;
 }
 
 p {
-  padding-left: 16px;
+  padding-left: 1.35rem;
 }
 
 .property {
@@ -105,7 +106,7 @@ p {
 }
 
 .brace {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5rem;
   padding: 0;
 }
 
@@ -123,10 +124,10 @@ p {
 
 .cursor {
   color: black;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 100;
   font-family: Helvetica;
-  line-height: 12px;
+  line-height: 1rem;
   margin-left: -2px;
   animation: 1s blink step-end infinite;
 }
@@ -163,86 +164,92 @@ p {
 
 .avatar {
   background: url(assets/avatar-full.svg) no-repeat;
-  height: 40em;
+  height: 40rem;
   width: 100%;
   position: fixed;
-  top: 6em;
-  left: 6em;
+  top: 5rem;
+  left: 5rem;
 }
 
 
 /* Mobile layout  */
 
-@media screen and (max-width: 32em) {
+@media screen and (max-width: 32rem) and (orientation: portrait) {
   body {
-    font-size: 14px;
+    font-size: 1.2rem;
   }
   
   p {
-    padding-left: 1.2em;
+    padding-left: 1.2rem;
   }
   
   .content {
     max-width: 100vh;
-    margin: 8px 0 0 0;
-    padding-right: 16px;
+    margin: 0.6rem 0 0 0;
+    padding-right: 1.3rem;
     position: relative;
   }
 
   .avatar {
     background: url(assets/avatar-head.svg) center center no-repeat;
     display: block;
-    margin: 2em 0 2em 0;
+    margin: 2rem 0 2rem 0;
     position: relative;
-    height: 6em;
+    height: 6rem;
     top: 0;
     left: 0;
   }
 }
 
 
-@media screen and (max-width: 52em) and (orientation: landscape) {
+@media screen and (max-width: 64rem) and (orientation: landscape) {
   body {
-    font-size: 1.15em;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
   }
   
   p {
-    padding-left: 1.2em;
+    padding-left: 1.4rem;
   }
   
   .content {
-    margin: 0 0 0 16em;
+    margin: 0 0 0 16rem;
     min-width: 100vh;
-    padding-right: 16px;
+    padding-right: 1.3rem;
   }
   
   .avatar {
-    height: 16em;
-    left: 5em;
-    top: 2.5em;
+    height: 16rem;
+    left: 5rem;
+    top: 2.5rem;
   } 
 }
 
 
 /* Tablet-friendly */
 
-@media only screen and (min-width: 48em) and (max-width: 64em) {
+@media only screen and (min-width: 64rem) and (max-width: 86rem) {
   body {
-    font-size: 1.15em;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
   
   p {
-    padding-left: 1.2em;
+    padding-left: 1.2rem;
+  }
+  
+  .brace {
+    margin-bottom: 1.6rem;
   }
   
   .content {
-    margin: 0 0 0 16em;
+    margin: 0 0 0 20rem;
     min-width: 100vh;
-    padding-right: 16px;
+    padding-right: 1.4rem;
   }
   
   .avatar {
-    height: 16em;
-    left: 5em;
+    height: 30rem;
+    left: 5rem;
   } 
 }
