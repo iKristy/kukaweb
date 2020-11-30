@@ -214,7 +214,6 @@ p {
   
   .content {
     margin: 0 0 0 16rem;
-    min-width: 100vh;
     padding-right: 1.3rem;
   }
   
@@ -228,7 +227,7 @@ p {
 
 /* Tablet-friendly */
 
-@media only screen and (min-width: 64rem) and (max-width: 86rem) {
+@media only screen and (min-width: 64rem) and (max-width: 84rem) {
   body {
     font-size: 1.2rem;
     line-height: 1.6rem;
@@ -244,7 +243,6 @@ p {
   
   .content {
     margin: 0 0 0 20rem;
-    min-width: 100vh;
     padding-right: 1.4rem;
   }
   
