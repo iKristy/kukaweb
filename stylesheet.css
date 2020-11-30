@@ -1,12 +1,12 @@
 @font-face {
   	font-family: Monaco;
   	src: url("assets/Monaco.ttf");
-    
-	}
+}
 
-* { 
+*, ::after, ::before { 
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body, html { 
@@ -23,16 +23,25 @@ body {
 }
 
 a {
+  border-radius: 0.5em;
 	color: darkgreen;
-	padding: 2px;
-  text-decoration: none;
+  padding: 2px;
+  text-decoration: underline gainsboro;
+}
+
+a::before, a::after {
+  content: '"';
+  text-decoration: underline white;
 }
 
 a:hover {
-	background: darkgreen;
-	border-radius: 16px;
   color: white;
+  background: darkgreen;
   text-decoration: none;
+}
+
+a:hover::before, a:hover::after {
+  text-decoration: darkgreen;
 }
 
 h2 {
@@ -87,10 +96,6 @@ p {
   padding-left: 16px;
 }
 
-.selector {
-	color: #c8327f;
-}
-
 .property {
 	color: mediumvioletred;
 }
@@ -108,6 +113,10 @@ p {
 	color: gray;
   font-style: italic;
   padding: 0;
+}
+
+.linked {
+  color: darkgreen;
 }
 
 /* Blinking cursor */
