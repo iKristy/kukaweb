@@ -3,22 +3,21 @@
   	src: url("Monaco.ttf");
 	}
 
-html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
-	margin: 0;
-	padding: 0;
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+body, html { 
+  height: 100%;
 }
 
 body {
 	background: pink url("images/bg.png") no-repeat;
   background-size: cover;
-  display: block;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size: 12px;
 	line-height: 1.5em;
-}
-
-body, html {
-	height: 100%;
 }
 
 a {
@@ -47,23 +46,24 @@ li {
 }
 
 .content {
-	background-color: white;
+  background-color: white;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.32);
 	margin: 0 0 0 320px;
-  padding-right: 24px;
   min-height: 100%;
-  min-width: 420px;
+  overflow-y: scroll;
+  padding: 0 24px 16px 0;
 	position: relative;
+  width: 100%;
 }
 
 .lineNumbers  {
 	background: #f3f3f3;
-	border-right: 2px solid #efefef ;
-	float: left;
+	border-right: 2px solid #efefef;
+  min-height: 100%;
+  overflow: hidden;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	height: 100%;
 }
 
 .lineNumbers ul {
@@ -81,13 +81,16 @@ li {
 	margin: 32px 0 0 64px;
 }
 
+p {
+  padding-left: 16px;
+}
+
 .selector {
 	color: #c8327f;
 }
 
 .property {
 	color: #9f005b;
-	padding-left: 30px;
 }
 
 .value {
@@ -96,11 +99,13 @@ li {
 
 .brace {
 	margin-bottom: 1.5em;
+  padding: 0;
 }
 
 .gray {
-	font-style: italic;
 	color: #8e8e8e;
+  font-style: italic;
+  padding: 0;
 }
 
 /* Blinking cursor */
@@ -157,29 +162,32 @@ li {
 
 /* Mobile layout  */
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 45em) {
   
   body {
     font-size: 14px;
   }
   
+  p {
+    padding-left: 1.2em;
+  }
+  
   .content {
-    max-height: 110%;
     min-width: 320px;
-    margin: 24px 0 0 0;
+    margin: 8px 0 0 0;
     padding-right: 16px;
     position: relative;
   }
 
   .avatar {
-    background: url(images/avatar-head.svg) no-repeat center center;
+    background: url(images/avatar-head.svg) center center no-repeat;
     display: block;
     position: relative;
     margin: auto;
-    margin-top: 2em;
-    height: 30%;
-    width: 30%;
-    left: 0;
+    margin-top: 1em;
+    height: 25%;
+    width: 25%;
     top: 0;
+    left: 0;
   }
 }
