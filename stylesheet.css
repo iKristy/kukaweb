@@ -73,6 +73,7 @@ li {
 
 .lineNumbers li {
 	color: #8e8e8e;
+  cursor: default;
 	padding: 0 12px;
 	text-align: right;
 }
