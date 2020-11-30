@@ -32,7 +32,8 @@ a {
 
 a::before, a::after {
   content: '"';
-  text-decoration: underline white;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 a:hover {
@@ -206,11 +207,10 @@ p {
 @media screen and (max-width: 64rem) and (orientation: landscape) {
   body {
     font-size: 1.1rem;
-    line-height: 1.4rem;
   }
   
   p {
-    padding-left: 1.4rem;
+    padding-left: 1.3rem;
   }
   
   .content {
@@ -230,12 +230,12 @@ p {
 
 @media only screen and (min-width: 64rem) and (max-width: 84rem) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.16rem;
     line-height: 1.6rem;
   }
   
   p {
-    padding-left: 1.2rem;
+    padding-left: 1.3rem;
   }
   
   .brace {
