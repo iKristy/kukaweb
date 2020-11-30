@@ -11,6 +11,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 body {
 	background: pink url("images/bg.png") no-repeat;
   background-size: cover;
+  display: block;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size: 12px;
 	line-height: 1.5em;
@@ -156,23 +157,18 @@ li {
 
 /* Mobile layout  */
 
-@media only screen and (min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (max-width: 45em) {
+@media screen and (max-width: 60em) {
+  
   body {
     font-size: 14px;
   }
   
   .content {
-    min-height: 110%;
+    max-height: 110%;
     min-width: 320px;
     margin: 24px 0 0 0;
     padding-right: 16px;
     position: relative;
-  }
-  
-  .info {
-    height: 110%;
   }
 
   .avatar {
