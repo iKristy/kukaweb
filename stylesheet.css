@@ -13,10 +13,11 @@ body, html {
 }
 
 body {
-	background: pink url("images/bg.png") no-repeat;
+	background: pink url("images/bg.png") no-repeat fixed;
   background-size: cover;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size: 12px;
+  height: available;
 	line-height: 1.5em;
 }
 
@@ -53,7 +54,7 @@ li {
   overflow-y: scroll;
   padding: 0 24px 16px 0;
 	position: relative;
-  width: 100%;
+  width: available;
 }
 
 .lineNumbers  {
@@ -208,6 +209,7 @@ p {
   .avatar {
     height: 16em;
     left: 5em;
+    top: 2.5em;
   } 
 }
 
