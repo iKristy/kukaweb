@@ -16,22 +16,23 @@ body, html {
 body {
 	background: pink url("assets/bg.png") no-repeat fixed;
   background-size: cover;
+  color: black;
 	font-family: Monaco, "Courier New", Courier, monospace, "monospaced";
 	font-size: 12px;
-  height: available;
 	line-height: 1.5em;
 }
 
 a {
-	color: #2a6e33;
-	text-decoration: none;
+	color: darkgreen;
 	padding: 2px;
+  text-decoration: none;
 }
 
 a:hover {
-	color: #fff;
-	background: #2a6e33;
+	background: darkgreen;
 	border-radius: 16px;
+  color: white;
+  text-decoration: none;
 }
 
 h2 {
@@ -55,12 +56,10 @@ li {
   overflow-y: scroll;
   padding: 0 24px 16px 0;
 	position: relative;
-  width: available;
 }
 
 .lineNumbers  {
-	background: #f3f3f3;
-	border-right: 2px solid #efefef;
+	background: whitesmoke;
   min-height: 100%;
   overflow: hidden;
 	position: absolute;
@@ -73,7 +72,7 @@ li {
 }
 
 .lineNumbers li {
-	color: #8e8e8e;
+	color: gray;
   cursor: default;
 	padding: 0 12px;
 	text-align: right;
@@ -93,11 +92,11 @@ p {
 }
 
 .property {
-	color: #9f005b;
+	color: mediumvioletred;
 }
 
 .value {
-	color: #000099;
+	color: darkblue;
 }
 
 .brace {
@@ -106,7 +105,7 @@ p {
 }
 
 .gray {
-	color: #8e8e8e;
+	color: gray;
   font-style: italic;
   padding: 0;
 }
