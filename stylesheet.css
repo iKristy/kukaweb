@@ -26,7 +26,7 @@ a {
   border-radius: 0.4rem;
 	color: darkgreen;
   padding: 0.15rem;
-  text-decoration: underline gainsboro;
+  text-decoration: underline lightgray;
 }
 
 a::before, a::after {
