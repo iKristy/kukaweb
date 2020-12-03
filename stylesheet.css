@@ -85,7 +85,6 @@ li {
 
 .lineNumbers li {
 	color: dimgray;
-  opacity: 0.80;
   cursor: default;
 	padding: 0 1rem;
 	text-align: right;
