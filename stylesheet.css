@@ -43,11 +43,10 @@ a:hover {
   color: white;
   background: darkgreen;
   text-decoration: none;
-  transition: background .2s ease-in-out, color .2s ease-in-out;
 }
 
 a:hover::before, a:hover::after {
-  text-decoration: darkgreen;
+  text-decoration-color: darkgreen;
 }
 
 h2 {
