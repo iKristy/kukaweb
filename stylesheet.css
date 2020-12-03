@@ -1,6 +1,9 @@
 @font-face {
   	font-family: Monaco;
   	src: url("assets/Monaco.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 *, ::after, ::before { 
