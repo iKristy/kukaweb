@@ -178,7 +178,7 @@ p {
 
 /* Mobile layout  */
 
-@media screen and (max-width: 32rem) and (orientation: portrait) {
+@media only screen and (max-device-width: 428px) and (orientation: portrait) {
   body {
     font-size: 1.2rem;
   }
@@ -206,7 +206,7 @@ p {
 }
 
 
-@media screen and (max-width: 64rem) and (orientation: landscape) {
+@media only screen and (max-device-width: 414px) and (orientation: landscape) {
   body {
     font-size: 1.1rem;
   }
